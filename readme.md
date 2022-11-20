@@ -3,3 +3,5 @@ alias cobra-cli='~/go/bin/cobra-cli'
 cobra-cli init cli_golang
 
 go run app/main.go
+
+go run app/main.go net ping --url=google.com
