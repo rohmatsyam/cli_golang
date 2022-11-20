@@ -4,6 +4,7 @@ Copyright © 2022 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
+	"cli_golang/cmd/info"
 	"cli_golang/cmd/net"
 	"os"
 
@@ -36,6 +37,7 @@ func Execute() {
 
 func subCommandPalletes() {
 	rootCmd.AddCommand(net.NetCmd)
+	rootCmd.AddCommand(info.InfoCmd)
 }
 
 func init() {
